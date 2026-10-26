@@ -409,6 +409,266 @@ h2 {
   color: var(--text-dim);
 }
 
+/* ---------- how to download: four steps with mini pictures -------- */
+.howto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.how {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--surface-top), var(--surface));
+  padding: 18px;
+}
+
+.how-head {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.how-head b {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border-radius: 9px;
+  font-size: 12px;
+  color: var(--accent-soft);
+  background: var(--accent-deep);
+  border: 1px solid #24365a;
+}
+
+.how-head strong {
+  font-size: 14px;
+}
+
+.how-head p {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* a tiny fake window, drawn in CSS, no screenshots needed */
+.mock {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: #0b0f16;
+  overflow: hidden;
+}
+
+.mock-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  background: #0e131c;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.mock-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2a3442;
+}
+
+.mock-dot.r {
+  background: #43303a;
+}
+.mock-dot.y {
+  background: #40392c;
+}
+.mock-dot.g {
+  background: #2c3f38;
+}
+
+.mock-url {
+  margin-left: 8px;
+  font-size: 9.5px;
+  letter-spacing: 0.03em;
+  color: var(--muted-deep);
+}
+
+.mock-body {
+  padding: 16px 14px;
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.mock-line {
+  display: block;
+  height: 6px;
+  border-radius: 4px;
+  background: #182130;
+}
+
+.w40 { width: 40%; }
+.w45 { width: 45%; }
+.w55 { width: 55%; }
+.w70 { width: 70%; }
+
+.mock-btn {
+  margin-top: 6px;
+  padding: 8px 16px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #06101f;
+  background: linear-gradient(180deg, #b9d3ff, #4c8dff);
+  box-shadow: 0 0 0 4px rgba(76, 141, 255, 0.16);
+}
+
+/* download bar of the browser */
+.dlbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 11px;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background: #111722;
+}
+
+.dl-ico {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #06101f;
+  background: linear-gradient(180deg, #b9d3ff, #6ba0ff);
+}
+
+.dl-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  flex: 1;
+  min-width: 0;
+}
+
+.dl-meta b {
+  font-size: 10.5px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.dl-meta small {
+  font-size: 9.5px;
+  color: var(--muted-deep);
+}
+
+.mock-keep {
+  padding: 6px 11px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #cfe2ff;
+  background: #1b2a3f;
+  border: 1px solid #2f4a6b;
+  box-shadow: 0 0 0 3px rgba(76, 141, 255, 0.13);
+}
+
+/* the blue Windows dialog */
+.mock-blue {
+  display: grid;
+  place-items: center;
+  min-height: 148px;
+  padding: 14px;
+  background: radial-gradient(220px 120px at 50% 0%, rgba(47, 107, 255, 0.18), transparent 70%), #0b0f16;
+}
+
+.ss {
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #24405f;
+  background: linear-gradient(180deg, #12243a, #0e1a2a);
+  padding: 13px;
+}
+
+.ss-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #dbe8ff;
+  line-height: 1.35;
+}
+
+.ss-sub {
+  margin-top: 6px;
+  font-size: 9.5px;
+  color: #8fa8c7;
+}
+
+.ss-row {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ss-link {
+  font-size: 9.5px;
+  color: #9cbeff;
+  text-decoration: underline;
+}
+
+.ss-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #eaf2ff;
+  background: #21456f;
+  border: 1px solid #3a6ba3;
+  box-shadow: 0 0 0 3px rgba(76, 141, 255, 0.15);
+}
+
+/* step 4: a slice of the real app */
+.mock-shot {
+  display: block;
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+
+.mock-tag {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: var(--accent-soft);
+  background: rgba(10, 13, 19, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.how-foot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
 /* ---------- download ---------- */
 .download {
   border-radius: var(--radius);
@@ -531,7 +791,8 @@ footer b {
   }
 
   .grid,
-  .steps {
+  .steps,
+  .howto {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -547,7 +808,8 @@ footer b {
 
 @media (max-width: 560px) {
   .grid,
-  .steps {
+  .steps,
+  .howto {
     grid-template-columns: 1fr;
   }
 
