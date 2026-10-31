@@ -61,7 +61,7 @@ const TEXT = {
       "Eine einzelne Datei, kein Installer, keine Admin-Rechte. Deine Einstellungen liegen unter %APPDATA%\\AimForge und bleiben beim nächsten Start erhalten.",
     "dl.button": "AimForge.exe herunterladen",
     "dl.alt": "ZIP mit Python",
-    "file.meta": "46,5 MB · Windows 10 / 11 · Version 2.0",
+    "file.meta": "46,5 MB · Windows 10 / 11 · Version 2.1",
     "note1":
       "Windows fragt beim ersten Start eventuell nach: Weitere Informationen → Trotzdem ausführen.",
     "note2":
